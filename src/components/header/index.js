@@ -3,6 +3,7 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
+import { Logo } from '../ui/icons'
 
 class Header extends Component {
     render() {
@@ -21,7 +22,12 @@ class Header extends Component {
                         flexGrow: 1
                     }}>
                         <div className='header_logo'>
-                            Logo
+                            <Logo
+                                link={true}
+                                linkTo='/'
+                                width='70px'
+                                height='70px'
+                            />
                        </div>
                     </div>
                     <Link to='/the_team'>
